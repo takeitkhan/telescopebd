@@ -228,9 +228,21 @@
     position: relative;
     top: 50%;
     transform: translateY(-50%);
-/ / width: 56 px;
     height: 56px;
     padding: 0 46px 0 17px;
+    line-height: 50px;
+    position: relative;
+    margin-left: 10px;
+}
+
+#header .menu-hover-start-button1 {
+    display: block;
+    float: right;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 56px;
+    padding: 0 17px 0 17px;
     line-height: 50px;
     position: relative;
     margin-left: 10px;
@@ -392,15 +404,15 @@
     background-image: url(../images/icons/menu_about.png);
 }
 
-#header .menu-hover .menu-hover-button.merchandise .icon {
-    background-image: url(../images/icons/menu_merchandise.png);
-}
-
-#header .menu-hover .menu-hover-button.skydiary .icon {
+#header .menu-hover .menu-hover-button.news .icon {
     background-image: url(../images/icons/menu_skydiary.png);
 }
 
-#header .menu-hover .menu-hover-button.solarlab .icon {
+#header .menu-hover .menu-hover-button.gallery .icon {
+    background-image: url(../images/icons/menu_solarlab.png);
+}
+
+#header .menu-hover .menu-hover-button.rnd .icon {
     background-image: url(../images/icons/menu_solarlab.png);
 }
 
@@ -412,7 +424,7 @@
     background-image: url(../images/icons/menu_models.png);
 }
 
-#header .menu-hover .menu-hover-button.spacepedia .icon {
+#header .menu-hover .menu-hover-button.shop .icon {
     background-image: url(../images/icons/menu_spacepedia.png);
 }
 
@@ -420,11 +432,11 @@
     background-image: url(../images/icons/menu_embed.png);
 }
 
-#header .menu-hover .menu-hover-button.paper .icon {
+#header .menu-hover .menu-hover-button.astronomy .icon {
     background-image: url(../images/icons/menu_paper.png);
 }
 
-#header .menu-hover .menu-hover-button.places .icon {
+#header .menu-hover .menu-hover-button.workshop .icon {
     background-image: url(../images/icons/menu_places.png);
 }
 

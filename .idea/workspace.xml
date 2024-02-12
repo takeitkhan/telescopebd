@@ -1,7 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="7ecebd1e-7301-44b3-b93d-e0bdc5f37403" name="Changes" comment="" />
+    <list default="true" id="7ecebd1e-7301-44b3-b93d-e0bdc5f37403" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/astro/resources/views/auth/member_register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/astro/resources/views/auth/why_register.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/astro/resources/views/frontend/donation.blade.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/astro/resources/views/frontend/templates/page/single-page-common.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/app/Http/Controllers/Frontend/TravelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/app/Http/Controllers/Frontend/TravelController.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/public/frontend/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/css/footer.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/public/frontend/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/css/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/public/frontend/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/css/home.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/public/frontend/images/footer_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/images/footer_logo.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/public/frontend/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/js/custom.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/public/frontend/js/solar.js" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/js/solar.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/resources/views/frontend/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/resources/views/frontend/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/resources/views/frontend/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/resources/views/frontend/layouts/header.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/routes/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/routes/auth.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/routes/frontend_custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/routes/frontend_custom.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -18,6 +36,9 @@
         <option value="CSS File" />
       </list>
     </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -180,11 +201,30 @@
       <workItem from="1703226647270" duration="627000" />
       <workItem from="1703232311253" duration="11000" />
       <workItem from="1703232323768" duration="1011000" />
-      <workItem from="1703850583895" duration="418000" />
+      <workItem from="1703850583895" duration="1074000" />
+      <workItem from="1704784562980" duration="6109000" />
+      <workItem from="1707331720957" duration="2378000" />
+      <workItem from="1707385845481" duration="1226000" />
+      <workItem from="1707448894058" duration="4303000" />
+      <workItem from="1707599438028" duration="4000" />
+      <workItem from="1707653124206" duration="5753000" />
+      <workItem from="1707717800777" duration="6000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
 </project>

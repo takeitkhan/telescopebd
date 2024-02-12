@@ -1,23 +1,23 @@
 $(function () {
 
-    SolarSystemScope.Platforms.Init();
-    if (!SolarSystemScope.IsIFrame()) {
-        SolarSystemScope.Cookies.InitDisclaimer();
-        SolarSystemScope.InitModal();
-        //SolarSystemScope.InitStickyNavbar();
+    TelescopeBangladesh.Platforms.Init();
+    if (!TelescopeBangladesh.IsIFrame()) {
+        TelescopeBangladesh.Cookies.InitDisclaimer();
+        TelescopeBangladesh.InitModal();
+        //TelescopeBangladesh.InitStickyNavbar();
     }
 
 });
 
-var SolarSystemScope = SolarSystemScope || {};
+var TelescopeBangladesh = TelescopeBangladesh || {};
 
-SolarSystemScope.Platforms = {
+TelescopeBangladesh.Platforms = {
 
     Init: function () {
 
-        if (SolarSystemScope.Platforms.initDone === true)
+        if (TelescopeBangladesh.Platforms.initDone === true)
             return;
-        SolarSystemScope.Platforms.initDone = true;
+        TelescopeBangladesh.Platforms.initDone = true;
 
         var body = $('body');
         if (!body.hasClass("mbl") && !body.hasClass("dsk")) {
@@ -30,13 +30,13 @@ SolarSystemScope.Platforms = {
             } else
                 body.addClass("dsk");
         }
-        SolarSystemScope.Platforms.isMobile = body.hasClass("mbl");
-        SolarSystemScope.Platforms.isDesktop = body.hasClass("dsk");
+        TelescopeBangladesh.Platforms.isMobile = body.hasClass("mbl");
+        TelescopeBangladesh.Platforms.isDesktop = body.hasClass("dsk");
     }
 
 };
 
-SolarSystemScope.Cookies = SolarSystemScope.Cookies || {
+TelescopeBangladesh.Cookies = TelescopeBangladesh.Cookies || {
 
     Get: function (cname) {
 
@@ -61,11 +61,11 @@ SolarSystemScope.Cookies = SolarSystemScope.Cookies || {
     },
 
     InitDisclaimer: function () {
-        if (SolarSystemScope.Cookies.Get("cookiesOK") != "ok") {
-            var cookiesDisclaimer = $("<div class=\"cookies-disclaimer\">Solar System Scope website uses Cookies</div>");
+        if (TelescopeBangladesh.Cookies.Get("cookiesOK") != "ok") {
+            var cookiesDisclaimer = $("<div class=\"cookies-disclaimer\">Telescope Banladesh website uses Cookies</div>");
             var cookiesDisclaimerButton = $("<a class=\"btn-type-1-blue\">Got it!</a>");
             cookiesDisclaimerButton.click(function () {
-                SolarSystemScope.Cookies.Set("cookiesOK", "ok", 365);
+                TelescopeBangladesh.Cookies.Set("cookiesOK", "ok", 365);
                 $(".cookies-disclaimer").remove();
             });
             cookiesDisclaimer.append(cookiesDisclaimerButton);
@@ -74,7 +74,7 @@ SolarSystemScope.Cookies = SolarSystemScope.Cookies || {
     }
 };
 
-SolarSystemScope.InitModal = SolarSystemScope.InitModal || function () {
+TelescopeBangladesh.InitModal = TelescopeBangladesh.InitModal || function () {
 
     var modalDialog = $('<div class="modal-dialog"></div>');
     var modalHolder = $('<div class="modal fade" tabindex="-1" role="dialog" aria-labelledby=" label" aria-hidden="true"></div>');
@@ -94,7 +94,7 @@ SolarSystemScope.InitModal = SolarSystemScope.InitModal || function () {
 
 };
 
-SolarSystemScope.InitStickyNavbar = SolarSystemScope.InitStickyNavbar || function () {
+TelescopeBangladesh.InitStickyNavbar = TelescopeBangladesh.InitStickyNavbar || function () {
 
     var navbar = $('#header > .navbar');
     var sticky_navigation_offset_top = navbar.offset().top;
@@ -109,7 +109,7 @@ SolarSystemScope.InitStickyNavbar = SolarSystemScope.InitStickyNavbar || functio
 
 };
 
-SolarSystemScope.Logout = SolarSystemScope.Logout || function () {
+TelescopeBangladesh.Logout = TelescopeBangladesh.Logout || function () {
 
     $.ajax({
         type: 'POST',
@@ -121,11 +121,11 @@ SolarSystemScope.Logout = SolarSystemScope.Logout || function () {
 
 };
 
-SolarSystemScope.IsIFrame = SolarSystemScope.IsIFrame || function () {
+TelescopeBangladesh.IsIFrame = TelescopeBangladesh.IsIFrame || function () {
     return window.location !== window.parent.location;
 }
 
-SolarSystemScope.GeneratePassword = SolarSystemScope.GeneratePassword || function (length) {
+TelescopeBangladesh.GeneratePassword = TelescopeBangladesh.GeneratePassword || function (length) {
     if (!length)
         length = 8;
     var chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890";
@@ -137,16 +137,16 @@ SolarSystemScope.GeneratePassword = SolarSystemScope.GeneratePassword || functio
     return pass;
 }
 
-SolarSystemScope.Parallax = SolarSystemScope.Parallax || {
+TelescopeBangladesh.Parallax = TelescopeBangladesh.Parallax || {
 
     Objects: [],
 
     UpdateObjects: function (elementOnly) {
 
-        if (SolarSystemScope.Parallax.available !== true)
+        if (TelescopeBangladesh.Parallax.available !== true)
             return;
 
-        if (!SolarSystemScope.Parallax.Objects)
+        if (!TelescopeBangladesh.Parallax.Objects)
             return;
 
         var documentElement = $(document);
@@ -157,7 +157,7 @@ SolarSystemScope.Parallax = SolarSystemScope.Parallax || {
         var windowBottom = windowTop + windowHeight;
         var windowCenter = windowTop + windowHeight / 2;
 
-        SolarSystemScope.Parallax.Objects.forEach(function (object) {
+        TelescopeBangladesh.Parallax.Objects.forEach(function (object) {
 
             if (elementOnly && object.element != elementOnly)
                 return;
@@ -221,23 +221,23 @@ SolarSystemScope.Parallax = SolarSystemScope.Parallax || {
     },
 
     OnScroll: function () {
-        SolarSystemScope.Parallax.UpdateObjects();
+        TelescopeBangladesh.Parallax.UpdateObjects();
     },
 
     Init: function () {
-        if (SolarSystemScope.Parallax.initDone === true)
+        if (TelescopeBangladesh.Parallax.initDone === true)
             return;
-        SolarSystemScope.Parallax.initDone = true;
-        SolarSystemScope.Platforms.Init();
-        if (SolarSystemScope.Platforms.isMobile)
+        TelescopeBangladesh.Parallax.initDone = true;
+        TelescopeBangladesh.Platforms.Init();
+        if (TelescopeBangladesh.Platforms.isMobile)
             return;
-        SolarSystemScope.Parallax.available = true;
-        $(window).on('scroll resize', SolarSystemScope.Parallax.OnScroll);
-        $(document).ready(SolarSystemScope.Parallax.Ready);
+        TelescopeBangladesh.Parallax.available = true;
+        $(window).on('scroll resize', TelescopeBangladesh.Parallax.OnScroll);
+        $(document).ready(TelescopeBangladesh.Parallax.Ready);
     },
 
     Ready: function () {
-        SolarSystemScope.Parallax.Objects.forEach(function (object) {
+        TelescopeBangladesh.Parallax.Objects.forEach(function (object) {
             switch (object.type) {
                 case "element":
                     object.element.css({visibility: "visible"});
@@ -247,12 +247,12 @@ SolarSystemScope.Parallax = SolarSystemScope.Parallax || {
                     break;
             }
         });
-        SolarSystemScope.Parallax.UpdateObjects();
+        TelescopeBangladesh.Parallax.UpdateObjects();
     },
 
     AddElement: function (element, params) {
-        SolarSystemScope.Parallax.Init();
-        if (SolarSystemScope.Parallax.available !== true)
+        TelescopeBangladesh.Parallax.Init();
+        if (TelescopeBangladesh.Parallax.available !== true)
             return;
         if (!params)
             params = {};
@@ -261,13 +261,13 @@ SolarSystemScope.Parallax = SolarSystemScope.Parallax || {
         params.parallaxDelta = 0;
         if (!$.isReady)
             element.css({visibility: "hidden"});
-        SolarSystemScope.Parallax.Objects.push(params);
-        SolarSystemScope.Parallax.UpdateObjects(element);
+        TelescopeBangladesh.Parallax.Objects.push(params);
+        TelescopeBangladesh.Parallax.UpdateObjects(element);
     },
 
     AddBackground: function (element, params) {
-        SolarSystemScope.Parallax.Init();
-        if (SolarSystemScope.Parallax.available !== true)
+        TelescopeBangladesh.Parallax.Init();
+        if (TelescopeBangladesh.Parallax.available !== true)
             return;
         if (!params)
             params = {};
@@ -277,8 +277,8 @@ SolarSystemScope.Parallax = SolarSystemScope.Parallax || {
         params.parallaxDelta = 0;
         if (!$.isReady)
             element.css({backgroundImage: ""});
-        SolarSystemScope.Parallax.Objects.push(params);
-        SolarSystemScope.Parallax.UpdateObjects(element);
+        TelescopeBangladesh.Parallax.Objects.push(params);
+        TelescopeBangladesh.Parallax.UpdateObjects(element);
     }
 
 };

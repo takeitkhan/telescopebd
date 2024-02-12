@@ -129,6 +129,11 @@ class TravelController extends Controller
 
         dd($data);
     }
+
+    public function donate()
+    {
+        return view('frontend.donation');
+    }
 }
 
 /**
