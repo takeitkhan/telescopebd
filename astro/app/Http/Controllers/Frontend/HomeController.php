@@ -19,6 +19,11 @@ class HomeController extends Controller
         return view('frontend.index');
     }
 
+    public function dashboard() {
+        return view('frontend.dashboard');
+        //dd(2394232);
+    }
+
 
     //getPage
     public function page($term_type, $slug)

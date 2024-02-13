@@ -8,9 +8,38 @@ use Google\Service\ShoppingContent\Resource\Pos;
 use Illuminate\Http\Request;
 use Illuminate\Session;
 use App\Models\Post;
+use App\Models\Donation;
+use Illuminate\Support\Facades\Validator;
 
 class TravelController extends Controller
 {
+
+    public function donation(Request $request)
+    {
+
+        $validator = Validator::make($request->all(),[
+            'transaction_id' => 'required',
+            'payment_method' => 'required',
+            'amount' => 'required',
+        ]);
+
+        if ($validator->fails()) {        
+            return redirect()->back()->withErrors($validator)->withInput();
+        }
+
+        $data = [
+
+            'transaction_id' => $request->transaction_id,
+            'payment_method' => $request->payment_method,
+            'amount' => $request->amount,
+        ];
+
+        $store = Donation::create($data);
+
+        return redirect()->back()->with('success', 'Store Successfully');
+
+    }
+
     public function search(Request $request)
     {
         $parent_cat_id = $request->parent_cat_id;

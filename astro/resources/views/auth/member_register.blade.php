@@ -76,7 +76,7 @@
                             <div class="row form-group">
                                 <div class="col-md-6">
                                     <label>Present Address</label>
-                                    <textarea class="form-control"></textarea>
+                                    <textarea name="payment_address" class="form-control"></textarea>
                                 </div>
 
                                 <div class="col-md-6">
@@ -89,7 +89,7 @@
                             <div class="row form-group">
                                 <div class="col-md-6">
                                     <label>Religion</label>
-                                    <select class="form-control">
+                                    <select name="religion" class="form-control">
                                         <option value="Islam">Islam</option>
                                         <option value="Hindu">Hindu</option>
                                         <option value="Christian">Christian</option>
@@ -133,44 +133,41 @@
                                     <br/>
 
                                     <label>Membership Type</label><br/>
-                                    <input type="radio" name="gender" value="student"/> Student- Tk. 600 yearly<br/>
-                                    <input type="radio" name="gender" value="regular"/> Regular- Tk. 1,200 yearly<br/>
-                                    <input type="radio" name="gender" value="executive"/> Executive- Tk. 2,400 yearly
+                                    <input type="radio" name="membertype" value="2"/> Student- Tk. 600 yearly<br/>
+                                    <input type="radio" name="membertype" value="3"/> Regular- Tk. 1,200 yearly<br/>
+                                    <input type="radio" name="membertype" value="4"/> Executive- Tk. 2,400 yearly
 
                                     <br/>
                                     <br/>
 
                                     <label>Membership Activities Type</label><br/>
-                                    <input type="radio" name="gender" value="Active"/> Active<br/>
-                                    <input type="radio" name="gender" value="Normal"/> Normal<br/>
-                                    <input type="radio" name="gender" value="Non-Active"/> Non-Active
+                                    <input type="radio" name="member_status" value="Active"/> Active<br/>
+                                    <input type="radio" name="member_status" value="Normal"/> Normal<br/>
+                                    <input type="radio" name="member_status" value="Non-Active"/> Non-Active
                                 </div>
 
                                 <div class="col-md-6">
                                     <label>Field of Interest</label><br/>
-                                    <input type="checkbox" value="Space"> Space<br/>
-                                    <input type="checkbox" value="Science"> Science<br/>
-                                    <input type="checkbox" value="Astronomy"> Astronomy<br/>
-                                    <input type="checkbox" value="Astrophotgraphy"> Astrophotgraphy<br/>
-                                    <input type="checkbox" value="Technology"> Technology<br/>
-                                    <input type="checkbox" value="Research"> Research<br/>
-                                    <input type="checkbox" value="Art"> Art<br/>
-                                    <input type="checkbox" value="Data Analyst"> Data Analyst<br/>
-                                    <input type="checkbox" value="Workshop"> Workshop<br/>
-                                    <input type="checkbox" value="Stargazing Event"> Stargazing Event<br/>
-                                    <input type="checkbox" value="Lecture"> Lecture<br/>
-                                    <input type="checkbox" value="Publication"> Publication<br/>
-                                    <input type="checkbox" value="Community Volunteer"> Community Volunteer<br/>
-                                    <input type="checkbox" value="Fundraiser"> Fundraiser
+                                    <input name="member_interest" type="checkbox" value="Space"> Space<br/>
+                                    <input name="member_interest" type="checkbox" value="Science"> Science<br/>
+                                    <input name="member_interest" type="checkbox" value="Astronomy"> Astronomy<br/>
+                                    <input name="member_interest" type="checkbox" value="Astrophotgraphy"> Astrophotgraphy<br/>
+                                    <input name="member_interest" type="checkbox" value="Technology"> Technology<br/>
+                                    <input name="member_interest" type="checkbox" value="Research"> Research<br/>
+                                    <input name="member_interest" type="checkbox" value="Art"> Art<br/>
+                                    <input name="member_interest" type="checkbox" value="Data Analyst"> Data Analyst<br/>
+                                    <input name="member_interest" type="checkbox" value="Workshop"> Workshop<br/>
+                                    <input name="member_interest" type="checkbox" value="Stargazing Event"> Stargazing Event<br/>
+                                    <input name="member_interest" type="checkbox" value="Lecture"> Lecture<br/>
+                                    <input name="member_interest" type="checkbox" value="Publication"> Publication<br/>
+                                    <input name="member_interest" type="checkbox" value="Community Volunteer"> Community Volunteer<br/>
+                                    <input name="member_interest" type="checkbox" value="Fundraiser"> Fundraiser
                                 </div>
                             </div>
 
                             <div class="row form-group">
                                 <div class="col-md-6">
-                                    <a style="color: white;" href="{{ route('member_registration') }}"
-                                       class="btn-type-1-blue menu-hover-start-button1" type="submit">
-                                        Register Now!
-                                    </a>
+                                    <button class="btn-type-1-blue menu-hover-start-button1" type="submit">Register Now!</button>
                                 </div>
                             </div>
                         </fieldset>

@@ -1,3 +1,8 @@
+            
+<form id="logout-form" action="{{ route('logout') }}" method="POST">
+@csrf
+</form>
+
 <!-- Header start -->
 <div id="header">
     <div class="navbar">
@@ -9,16 +14,31 @@
                 <img src="{{ $the::siteLogo() }}" alt="Telescope Bangladesh" class="img-responsive">
             </a>
         </div>
-
         <div class="menu">
+            <?php
+                $user_id = Auth::user();
+            ?>
             <a class="btn-type-1-blue menu-hover-start-button">Explore</a>
-            <a href="{{ route('why_register') }}" class="btn-type-1-blue menu-hover-start-button1">Sign Up</a>
-            <a href="{{ url('/') }}" class="btn-type-1-blue menu-hover-start-button1">Sign In</a>
+
+             
+
+
+            @if(!empty($user_id))
+                <a  onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
+                    class="btn-type-1-blue menu-hover-start-button1" 
+                    href="{{ route('logout') }}">
+                    Sign Out
+                </a>
+                <a href="#" class="btn-type-1-blue menu-hover-start-button1">Profile</a>
+            @else
+                <a href="{{ route('why_register') }}" class="btn-type-1-blue menu-hover-start-button1">Sign Up</a>
+                <a href="{{ route('member_signin') }}" class="btn-type-1-blue menu-hover-start-button1">Sign In</a>
+            @endif                 
             <a href="{{ url('/') }}" class="btn-type-1-blue menu-hover-start-button1">
-                <img src="public/frontend/images/icons/menu_home.png" width="30"/>
+                <img src="public/frontend/images/icons/me
+                nu_home.png" width="30"/>
             </a>
         </div>
-
     </div>
 
     <div class="menu-hover-backdrop" style="display: none;"></div>

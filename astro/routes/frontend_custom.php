@@ -12,6 +12,8 @@ Route::group([
     Route::get('/donate', 'TravelController@donate')->name('donate');
     Route::post('/checkout', 'TravelController@checkout')->name('checkout');
     Route::post('/paynow', 'TravelController@paynow')->name('paynow');
+    Route::post('/donation', 'TravelController@donation')->name('donation');
+
 });
 
 ?>

@@ -40,24 +40,26 @@ class LoginController extends Controller
     {
         $this->middleware('guest')->except('logout');
     }
-   
+    
+
     //Redirect After Login
      protected function redirectTo(){
-        if(auth()->user()->checkUserRoleTypeGlobal()) {
-            return route('admin_dashboard');
-        } else if (auth()->user()->role->id == '3') {
-             //return route('home');
-             //return $next($request);
-             //redirect()->back();
+        if(auth()->user()->checkUserRoleTypeGeneral()){
+            return route('frontend_dashboard');
+        } else if (auth()->user()->role->id == '3'){
+             return route('home');
+             return $next($request);
+             redirect()->back();
             if(!session()->has('url.intended')){
                 session(['url.intended' => url()->previous()]);
                 return redirect()->to(session()->get('url.intended'));
             }
+
         } else {
             return '/';
         } 
     }
-    /*
+    
     public function showLoginForm()
     {
         if(!session()->has('url.intended'))
@@ -66,7 +68,10 @@ class LoginController extends Controller
         }
         return view('auth.login');
     }
-    */
-
+    
+    public function logout(Request $request) {
+        Auth::logout();
+        return redirect('/');
+    }
     
 }

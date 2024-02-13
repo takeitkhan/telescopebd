@@ -13,6 +13,8 @@ Route::group(['prefix' => '/system', 'namespace' => 'App\Http\Controllers', 'as'
     Route::get('member_registration', 'Auth\RegisterController@memberRegistrationForm')->name('member_registration');
     Route::post('register_now', 'Auth\RegisterController@registerNow')->name('register_now');
 
+    Route::get('member_signin', 'Auth\RegisterController@memberSignin')->name('member_signin');
+
     // Password Reset Routes...
     Route::get('reset', 'Auth\ForgotPasswordController@showLinkRequestForm')->name('password.request');
     Route::post('password/email', 'Auth\ForgotPasswordController@sendResetLinkEmail')->name('password.email');
@@ -34,4 +36,5 @@ Route::group(['prefix' => '/auth', 'namespace' => 'App\Http\Controllers\Frontend
     //customer
     Route::post('auth/profile/update', 'customerController@accountUpdate')->name('profile_update');
     Route::post('auth/address/update', 'customerController@AddressUpdate')->name('address_update');
+   
 });

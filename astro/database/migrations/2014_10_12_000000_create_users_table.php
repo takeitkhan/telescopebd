@@ -29,6 +29,16 @@ class CreateUsersTable extends Migration
             $table->string('password');
             $table->date('birthdate')->nullable()->format('Y-m-d');
             $table->enum('gender',['Male', 'Female'])->nullable();
+            $table->string('transaction_id');
+            $table->string('payment_method');
+            $table->string('full_name');
+            $table->string('facebook');
+            $table->string('religion');
+            $table->string('highest_qualification');
+            $table->string('major_subject');
+            $table->string('hobbies');
+            $table->string('membertype');
+            $table->string('member_status');
             $table->rememberToken();
             $table->timestamps();
         });

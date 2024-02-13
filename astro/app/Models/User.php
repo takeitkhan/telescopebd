@@ -19,7 +19,6 @@ class User extends Authenticatable
      * @var array
      */
     protected $fillable = [
-        'name',
         'first_name',
         'last_name',
         'email',
@@ -31,7 +30,17 @@ class User extends Authenticatable
         'thana',
         'district',
         'gender',
-        'birthdate'
+        'birthdate',
+        'transaction_id',
+        'payment_method',
+        'full_name',
+        'facebook',
+        'religion',
+        'highest_qualification',
+        'major_subject',
+        'hobbies',
+        'membertype',
+        'member_status'
     ];
 
     /**
@@ -104,7 +113,7 @@ class User extends Authenticatable
                         ->where('role_users.user_id', auth()->user()->id)
                         ->where('roles.type', 'Global')
                         //->first()->role_id ?? NULL;
-                        ->get();
+                        ->get();         
         if(count($check) > 0){
             return true;
         } else {
