@@ -36,5 +36,5 @@ Route::group(['prefix' => '/auth', 'namespace' => 'App\Http\Controllers\Frontend
     //customer
     Route::post('auth/profile/update', 'customerController@accountUpdate')->name('profile_update');
     Route::post('auth/address/update', 'customerController@AddressUpdate')->name('address_update');
-   
+
 });

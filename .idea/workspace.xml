@@ -2,23 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7ecebd1e-7301-44b3-b93d-e0bdc5f37403" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/astro/resources/views/auth/member_register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/astro/resources/views/auth/why_register.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/astro/resources/views/frontend/donation.blade.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/astro/resources/views/frontend/templates/page/single-page-common.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/app/Http/Controllers/Auth/RegisterController.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/app/Http/Controllers/Auth/RegisterController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/app/Http/Controllers/Frontend/TravelController.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/app/Http/Controllers/Frontend/TravelController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/public/frontend/css/footer.css" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/css/footer.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/public/frontend/css/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/css/header.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/public/frontend/css/home.css" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/css/home.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/public/frontend/images/footer_logo.png" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/images/footer_logo.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/public/frontend/js/custom.js" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/js/custom.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/public/frontend/js/solar.js" beforeDir="false" afterPath="$PROJECT_DIR$/astro/public/frontend/js/solar.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/resources/views/frontend/layouts/footer.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/resources/views/frontend/layouts/footer.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/forlive.zip" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/resources/views/frontend/dashboard.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/resources/views/frontend/dashboard.blade.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/astro/resources/views/frontend/donation.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/resources/views/frontend/donation.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/resources/views/frontend/layouts/header.blade.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/resources/views/frontend/layouts/header.blade.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/astro/routes/auth.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/routes/auth.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/astro/routes/frontend_custom.php" beforeDir="false" afterPath="$PROJECT_DIR$/astro/routes/frontend_custom.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -209,6 +198,8 @@
       <workItem from="1707599438028" duration="4000" />
       <workItem from="1707653124206" duration="5753000" />
       <workItem from="1707717800777" duration="6000" />
+      <workItem from="1707723171920" duration="799000" />
+      <workItem from="1707793132422" duration="1486000" />
     </task>
     <servers />
   </component>
