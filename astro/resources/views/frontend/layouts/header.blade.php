@@ -20,16 +20,13 @@
             ?>
             <a class="btn-type-1-blue menu-hover-start-button">Explore</a>
 
-             
-
-
             @if(!empty($user_id))
                 <a  onclick="event.preventDefault(); document.getElementById('logout-form').submit();" 
                     class="btn-type-1-blue menu-hover-start-button1" 
                     href="{{ route('logout') }}">
                     Sign Out
                 </a>
-                <a href="#" class="btn-type-1-blue menu-hover-start-button1">Profile</a>
+                <a href="{{ route('frontend_dashboard') }}" class="btn-type-1-blue menu-hover-start-button1">Profile</a>
             @else
                 <a href="{{ route('why_register') }}" class="btn-type-1-blue menu-hover-start-button1">Sign Up</a>
                 <a href="{{ route('member_signin') }}" class="btn-type-1-blue menu-hover-start-button1">Sign In</a>

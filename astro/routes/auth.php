@@ -12,7 +12,7 @@ Route::group(['prefix' => '/system', 'namespace' => 'App\Http\Controllers', 'as'
     Route::get('why_register', 'Auth\RegisterController@whyRegister')->name('why_register');
     Route::get('member_registration', 'Auth\RegisterController@memberRegistrationForm')->name('member_registration');
     Route::post('register_now', 'Auth\RegisterController@registerNow')->name('register_now');
-
+    
     Route::get('member_signin', 'Auth\RegisterController@memberSignin')->name('member_signin');
 
     // Password Reset Routes...
