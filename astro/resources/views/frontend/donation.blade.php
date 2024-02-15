@@ -25,21 +25,17 @@
                         <br>
                         <h3>Payment Options</h3><br>
                         <p>
-                        <b>Dutch Bangla Bank Ltd.</b><br/>
-                        Telescope Bangladesh<br/>
-                        223948203984<br/>
-                        Mohammadpur Branch<br/>
-<br/>
+                            <b>Dutch Bangla Bank Ltd.</b><br/>
+                            Telescope Bangladesh<br/>
+                            223948203984<br/>
+                            Mohammadpur Branch<br/>
+                            <br/>
 
-                        <b>Dutch Bangla Bank Ltd.</b><br/>
-                        Telescope Bangladesh<br/>
-                        223948203984<br/>
-                        Mohammadpur Branch<br/>
-<br/>
-                        <b>Dutch Bangla Bank Ltd.</b><br/>
-                        Telescope Bangladesh<br/>
-                        223948203984<br/>
-                        Mohammadpur Branch<br/>
+                            <b>Dutch Bangla Bank Ltd.</b><br/>
+                            Telescope Bangladesh<br/>
+                            223948203984<br/>
+                            Mohammadpur Branch<br/>
+                            <br/>
 
 
                         </p>
@@ -52,13 +48,24 @@
                         <form action="{{ route('frontend_donation')}}" method="post">
                             @csrf
                             <label>Payment Method</label>
-                            <input type="text" class="form-control" name="payment_method"><br>
-                            <label>Transection ID</label>
-                            <input type="text" class="form-control" name="transaction_id"><br>
-                            <label>Amount</label>
-                            <input type="text" class="form-control" name="amount"><br>
+                            <div class="form-group">
+                                <select class="form-control" name="payment_method">
+                                    <option value="dbbl">Dutch Bangla Bank Ltd.</option>
+                                    <option value="bKash">bKash</option>
+                                    <option value="Nagad">Nagad</option>
+                                    <option value="Janata">Janata Bank Ltd.</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label>Transection ID</label>
+                                <input type="text" class="form-control" name="transaction_id">
+                            </div>
+                            <div class="form-group">
+                                <label>Amount</label>
+                                <input type="text" class="form-control" name="amount">
+                            </div>
                             <button type="submit" class="btn-type-1-blue menu-hover-start-button1">Submit</button>
-                        </form>    
+                        </form>
                     </div>
 
                 </div>
